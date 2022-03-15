@@ -1,0 +1,28 @@
+package com.company;
+import java.sql.SQLOutput;
+import java.util.*;
+import java.util.concurrent.*;
+public class Main{
+
+    public static void main(String args[])
+    {
+    //inputtext is variable here
+    //Invoking StringBuilder parameterized constructor
+    StringBuilder inputText= new StringBuilder("AAAAABBCCCCC");
+    //toString() is a method
+    System.out.println("String =" + inputText.toString());
+    //reverse() is also method of stringBuilder
+    StringBuilder reverseInputText = inputText.reverse();
+    System.out.println("Reverse string =" + reverseInputText.toString());
+    //Append 'c' to the String
+    inputText.appendCodePoint(67);
+    System.out.println("Modified StringBuilder = " + inputText);
+    //Capacity is a method which returns current capacity of inputText
+    int capacity = inputText.capacity();
+    System.out.println("StringBuilder = " + inputText);
+    System.out.println("Capacity of StringBuilder = " + Capacity);
+    //StringBuilder() which takes capacity as input
+    StringBuilder inputString = new StringBuilder(10);
+    System.out.println("inputString capacity = " + inputString.capacity());
+    }
+    }
